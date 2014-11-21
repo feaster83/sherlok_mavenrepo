@@ -1,0 +1,40 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>org.sherlok</groupId>
+  <artifactId>sherlok_core</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+
+
+  <build>
+    <plugins>
+     <plugin>
+      <groupId>net.ju-n.maven.plugins</groupId>
+      <artifactId>checksum-maven-plugin</artifactId>
+      <version>1.2</version>
+      <executions>
+        <execution>
+          <goals>
+            <goal>files</goal>
+          </goals>
+        </execution>
+      </executions>
+      <configuration>
+       <algorithms>
+         <algorithm>SHA-1</algorithm>
+       </algorithms>
+       <fileSets>
+        <fileSet>
+          <directory>de</directory>
+          <includes>
+            <include>**.pom</include>
+            <include>**.jar</include>
+          </includes>
+        </fileSet>
+      </fileSets>
+    </configuration>
+  </plugin>
+</plugins>
+</build>
+</project>

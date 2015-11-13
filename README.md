@@ -8,7 +8,7 @@ A place to cache maven dependencies for Sherlok.
     <repositories>
         <repository>
             <id>sherlok_releases</id>
-            <url>https://github.com/sherlok/sherlok_mavenrepo/tree/master/releases</url>
+            <url>https://github.com/sherlok/sherlok_mavenrepo/raw/master/releases</url>
         </repository>
     </repositories>
 
@@ -17,11 +17,12 @@ A place to cache maven dependencies for Sherlok.
     <repositories>
         <repository>
             <id>sherlok_snapshots</id>
-            <url>https://github.com/sherlok/sherlok_mavenrepo/tree/master/snapshots</url>
+            <url>https://github.com/sherlok/sherlok_mavenrepo/raw/master/snapshots</url>
         </repository>
     </repositories>
 
 
+TODO raw or tree?
 
 ### fixing checksums
 

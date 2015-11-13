@@ -1,7 +1,29 @@
 sherlok_mavenrepo
 =================
 
-A place to put maven dependencies for sherlok
+A place to cache maven dependencies for Sherlok.
+
+## Releases:
+
+    <repositories>
+        <repository>
+            <id>sherlok_releases</id>
+            <url>https://github.com/sherlok/sherlok_mavenrepo/tree/master/releases</url>
+        </repository>
+    </repositories>
+
+## Snapshots:
+
+    <repositories>
+        <repository>
+            <id>sherlok_snapshots</id>
+            <url>https://github.com/sherlok/sherlok_mavenrepo/tree/master/snapshots</url>
+        </repository>
+    </repositories>
+
+
+
+### fixing checksums
 
     checksum-maven-plugin
 
